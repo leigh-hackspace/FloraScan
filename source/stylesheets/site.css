@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+a {
+  color: rgba(#000, 0.7);
+
+  &:focus,
+  &:hover {
+    color: rgba(#000, 0.6);
+  }
+}
+
+.info-container{
+  margin: 5px 25%;
+  outline: 1px black solid;
+}
+
+.nav-bar ul {
+    list-style: none;
+    color: black:
+    }
+
+.nav-bar ul li{
+    list-style: none;
+    }
+
+.nav-bar ul li a {
+    text-decoration : none;
+    }
+
+.nav-button {
+    display: flex;
+    float: left;
+    }

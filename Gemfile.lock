@@ -34,6 +34,8 @@ GEM
     fast_blank (1.0.1)
     fastimage (2.2.6)
     ffi (1.15.5)
+    google-protobuf (3.21.2-x86_64-darwin)
+    google-protobuf (3.21.2-x86_64-linux)
     haml (5.2.2)
       temple (>= 0.8.0)
       tilt
@@ -101,10 +103,14 @@ GEM
     rack (2.2.3.1)
     rack-livereload (0.3.17)
       rack
+    rake (13.0.6)
     rb-fsevent (0.11.1)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rexml (3.2.5)
+    sass-embedded (1.53.0)
+      google-protobuf (~> 3.19)
+      rake (>= 10.0.0)
     sassc (2.4.0)
       ffi (~> 1.9)
     servolux (0.13.0)
@@ -121,6 +127,7 @@ GEM
     zeitwerk (2.5.4)
 
 PLATFORMS
+  x86_64-darwin-21
   x86_64-linux
 
 DEPENDENCIES
@@ -129,6 +136,7 @@ DEPENDENCIES
   middleman (~> 4.2)
   middleman-autoprefixer (~> 2.7)
   middleman-livereload
+  sass-embedded (~> 1.53)
   tzinfo-data
   wdm (~> 0.1)
 

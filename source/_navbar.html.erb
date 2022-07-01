@@ -1,52 +1,25 @@
-<style>
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4f8b60">
+  <a class="navbar-brand" href="#">Trees</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-  .nav {
-    position: absolute;
-    margin-left: 25%;
-    top: 0; 
-
-     @media only screen and (max-width: 768px) {
-      margin-left: 0px;
-      width: 700px;
-     }
-  }
-
-  .nav ul {
-    list-style: none;
-    display: flex;
-    float: left;
-  }
-
-  .nav-button {
-    margin: 5px;
-    padding: 5px;
-    outline: 1px solid black;
-    border-radius: 5px;
-    text-transform : uppercase;
-    background-color: #DCEDC8; 
-  }
-
-  .nav-button:hover {
-    box-shadow: 2px 2px 2px 2px  #DAF7A6 ;
-  }
-
-  a {
-    text-decoration: none;
-    color: black;
-    background-color: #DCEDC8; 
-  }
-</style>
-<div class ="nav">
-  <ul>
-      <li class="nav-button"><%= link_to 'oak', '/trees/oak.html' %></li>
-      <li class="nav-button"><%= link_to 'alder', '/trees/alder.html' %></li>
-      <li class="nav-button"><%= link_to 'beech', '/trees/beech.html' %></li>
-      <li class="nav-button"><%= link_to 'rowan', '/trees/rowan.html' %></li>
-      <li class="nav-button"><%= link_to 'lime', '/trees/lime.html' %></li>
-      <li class="nav-button"><%= link_to 'spindle', '/trees/spindle.html' %></li>
-      <li class="nav-button"><%= link_to 'eucalyptus', '/trees/eucalyptus.html' %></li>
-      <li class="nav-button"><%= link_to 'scots-pine', '/trees/scots-pine.html' %></li>
-      <li class="nav-button"><%= link_to 'sweet-chestnut', '/trees/sweet-chestnut.html' %></li>
-      <li class="nav-button"><%= link_to 'aspen', '/trees/aspen.html' %></li>
-  </ul>
-</div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto" style="text-transform: capitalize;">
+      <li class="nav-item dropdown">
+       <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #0d492f;">
+          <li><%= link_to 'oak', '/trees/oak.html',  class:'dropdown-item' %></li>
+          <li><%= link_to 'alder', '/trees/alder.html',  class:'dropdown-item' %></li>
+          <li><%= link_to 'beech', '/trees/beech.html' ,  class:'dropdown-item' %></li>
+          <li><%= link_to 'rowan', '/trees/rowan.html' ,  class:'dropdown-item' %></li>
+          <li><%= link_to 'lime', '/trees/lime.html' ,  class:'dropdown-item' %></li>
+          <li><%= link_to 'spindle', '/trees/spindle.html' ,  class:'dropdown-item' %></li>
+          <li><%= link_to 'eucalyptus', '/trees/eucalyptus.html' ,  class:'dropdown-item' %></li>
+          <li><%= link_to 'scots-pine', '/trees/scots-pine.html' ,  class:'dropdown-item' %></li>
+          <li><%= link_to 'sweet-chestnut', '/trees/sweet-chestnut.html', class:'dropdown-item' %></li>
+          <li><%= link_to 'aspen', '/trees/aspen.html',  class:'dropdown-item' %></li>
+          <div class="dropdown-divider"></div>
+        </div>
+    </ul>
+  </div>
+</nav>
