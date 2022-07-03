@@ -1,17 +1,20 @@
-<div class="container-fluid">
-<div class="card-50 card-border-success text-center">
-  <h1 class="card-title" style="text-transform:Capitalize;"><%= current_page.data.tree_name %></h1>
-    <%= image_tag current_page.data.img_path,height:'55%',maxwidth:'22%', class: 'card-image-top rounded', alt: current_page.data.img_alt %>
-  <blockquote class="blockquote mb-0">
-    <footer class="blockquote-footer">
-      <p class="card-text" style="color:#6c6c6c;font-style:italic;"><%= current_page.data.latin_name %>
-    </footer>
-  </blockquote>
+<div class="container-fluid mt-4">
+  <div class="row">
+  <div class="col-sm-4 col-md-3"></div>
+  <div class="col-sm-8 col-md-8" >
+  <div class="card" style="width: 80%;">
+    <%= image_tag current_page.data.img_path, class: 'card-image-top rounded img-250 ', alt: current_page.data.img_alt %>
+     <blockquote class="blockquote mb-0 text-center">
+      <footer class="blockquote-footer">
+        <p class="card-text" style="color:#6c6c6c;font-style:italic;"><%= current_page.data.latin_name %>
+      </footer>
+    </blockquote>
 
-  <div class="card-body">
-    <p class="card-text">
-      <%= current_page.data.info %>
-    </p>
+   <div class="card-body text-center">
+     <h5 class="card-title" style="text-transform:Capitalize;"><%= current_page.data.tree_name %></h5>
+     <p class="card-text"><%= current_page.data.info %></p>
+   </div>
   </div>
-</div>
+  </div>
+  </div>
 </div>

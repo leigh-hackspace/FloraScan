@@ -16,7 +16,9 @@ page '/tree/*', layout: 'trees'
 
 activate :livereload
 
-set :css_dir, 'stylesheets'
+set :css_dir, 'css'
+set :sass_dir, 'css'
+set :fonts_dir, 'css/fonts'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
@@ -37,6 +39,12 @@ set :images_dir, 'images'
 # Helpers
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
+
+config :development do
+  compass_config do |config|
+    config.sass_options = {:debug_info =&gt; true}
+  end
+end
 
 # helpers do
 #   def some_helper
