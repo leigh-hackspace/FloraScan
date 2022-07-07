@@ -40,12 +40,6 @@ set :images_dir, 'images'
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
 
-config :development do
-  compass_config do |config|
-    config.sass_options = {:debug_info =&gt; true}
-  end
-end
-
 # helpers do
 #   def some_helper
 #     'Helping'
