@@ -1,15 +1,28 @@
+<style>
+
+
+  .mid-image{
+    width: 350px;
+    height: 350px;
+    margin: 15px 20%;
+  }
+</style>
+
+
 <div class="container-fluid my-2 py-2">
-  <div class="row">
-    <div class="col-sm-4 col-md-2"></div>
+  <div class="row"> 
+    <div class="col-sm-8 col-md-4"></div> <!-- Side column-->
     <div class="col-sm-8 col-lg-8 my-2 py-2">
-      <div class="card mt-4" style="width: auto;box-shadow:5px 5px 5px 5px #6c6c6c;">
-        <%= image_tag current_page.data.img_path, class:'card-image-top rounded', alt: current_page.data.img_alt %>
+      <div class="card mt-4 col-sm-2 col-lg-6" style="width: auto;box-shadow:5px 5px 5px 5px #6c6c6c;">
+      <div>
+        <%= image_tag current_page.data.img_path, class:'card-image-top rounded mid-image', alt: current_page.data.img_alt %>
         <blockquote class="blockquote mb-0 text-center">
           <footer class="blockquote-footer">
             <p class="card-text" style="color:#6c6c6c;font-style:italic;"><%= current_page.data.latin_name %>
           </footer>
         </blockquote>
-
+      </div>
+      <div>
         <div class="card-body text-center">
           <h5 class="card-title" style="text-transform:Capitalize;"><%= current_page.data.tree_name %></h5>
           <p class="card-text"><%= current_page.data.info %></p>
