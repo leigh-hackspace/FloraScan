@@ -1,11 +1,11 @@
 <style>
 
-
-  .mid-image{
-    width: 350px;
-    height: 350px;
-    margin: 15px 20%;
+  .img-fluid {
+    max-width: 90%;
+    height: auto;
+    margin: 15px 5%;
   }
+
 </style>
 
 
@@ -15,7 +15,7 @@
     <div class="col-sm-8 col-lg-8 my-2 py-2">
       <div class="card mt-4 col-sm-2 col-lg-6" style="width: auto;box-shadow:5px 5px 5px 5px #6c6c6c;">
       <div>
-        <%= image_tag current_page.data.img_path, class:'card-image-top rounded mid-image', alt: current_page.data.img_alt %>
+        <%= image_tag current_page.data.img_path, class:'card-image-top rounded img-fluid', alt: current_page.data.img_alt %>
         <blockquote class="blockquote mb-0 text-center">
           <footer class="blockquote-footer">
             <p class="card-text" style="color:#6c6c6c;font-style:italic;"><%= current_page.data.latin_name %>
