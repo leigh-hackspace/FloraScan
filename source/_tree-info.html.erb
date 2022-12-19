@@ -16,16 +16,21 @@
       <div class="card mt-4 col-sm-2 col-lg-6" style="width: auto;box-shadow:5px 5px 5px 5px #6c6c6c;">
       <div>
         <%= image_tag current_page.data.img_path, class:'card-image-top rounded img-fluid', alt: current_page.data.img_alt %>
-        <blockquote class="blockquote mb-0 text-center">
-          <footer class="blockquote-footer">
-            <p class="card-text" style="color:#6c6c6c;font-style:italic;"><%= current_page.data.latin_name %>
-          </footer>
-        </blockquote>
       </div>
       <div>
         <div class="card-body text-center">
           <h5 class="card-title" style="text-transform:Capitalize;"><%= current_page.data.tree_name %></h5>
-          <p class="card-text"><%= current_page.data.info %></p>
+          <blockquote class="blockquote mb-0 text-center">
+            <footer class="blockquote-footer">
+              <p class="card-text" style="color:#6c6c6c;font-style:italic;"><%= current_page.data.latin_name %>
+              <p class="card-text" style="color:#6c6c6c;font-style:italic;">Date planted: <%= current_page.data.date_planted %></p>
+              <p class="card-text" style="color:#6c6c6c;font-style:italic;">Country or origin: <%= current_page.data.country_of_origin %></p>
+            </footer>
+          </blockquote>
+          <hr>
+          <p class="card-text">Features: <br><%= current_page.data.features %></p><hr>
+          <p class="card-text">Growing conditions: <br><%= current_page.data.growing_conditions %></p><hr>
+          <p class="card-text">Did you know? <br><%= current_page.data.did_you_know %></p><hr>
         </div>
       </div>
     </div>
