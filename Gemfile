@@ -1,12 +1,16 @@
 source 'https://rubygems.org'
 
-gem 'middleman', '~> 4.2'
-gem 'middleman-autoprefixer', '~> 2.7'
-gem 'middleman-livereload'
-gem 'middleman-core', '~> 4.1', '>= 4.1.10'
-gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby, :x64_mingw]
-gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw, :x64_mingw]
-gem 'activesupport'
-gem 'better_errors', '~> 2.9', '>= 2.9.1'
-gem 'sass-embedded', '~> 1.53'
-gem 'contracts', '~> 0.16.1'
+gem 'middleman', '~> 4.5', '>= 4.5.1'
+gem 'middleman-core', '~> 4.5', '>= 4.5.1'
+gem 'middleman-cli', '~> 4.5', '>= 4.5.1'
+gem 'middleman-sprockets', '~> 4.1', '>= 4.1.1'
+gem 'middleman-autoprefixer', '~> 3.0'
+gem 'middleman-syntax', '~> 3.4'
+gem 'middleman-livereload', '~> 3.4', '>= 3.4.7'
+gem 'tzinfo-data', '~> 1.2024', '>= 1.2024.1'
+#gem 'wdm', '~> 0.1.1' Windows only 
+gem 'activesupport', '7.0'
+gem 'better_errors', '~> 2.10', '>= 2.10.1'
+gem 'sass-embedded', '~> 1.77', '>= 1.77.1'
+gem 'contracts', '0.13'
+gem 'eventmachine', '~> 1.2', '>= 1.2.7'
